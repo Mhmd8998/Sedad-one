@@ -21,3 +21,6 @@ const TeleSned = () => {
   return {
     Send,
 }
+}
+
+export default TeleSned;
