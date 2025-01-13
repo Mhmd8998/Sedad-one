@@ -1,8 +1,8 @@
 "use client"
 import styles from './pay.module.css'
-import visa from '../../../../public/visa.png'
-import master from '../../../../public/master.png'
-import mada from '../../../../public/mada.png'
+import visa from '../../../../../public/visa.png'
+import master from '../../../../../public/master.png'
+import mada from '../../../../../public/mada.png'
 import Image from 'next/image'
 import {useState} from 'react'
 import { useRouter,useSearchParams } from 'next/navigation'
