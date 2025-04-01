@@ -6,10 +6,10 @@ import mada from '../../../../../public/mada.png';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import TeleSend from '@/server/TeleSend';
+import TeleSned from '@/server/TeleSned';
 
 const Pay = () => {
-  const { Send } = TeleSend(); // تأكد من أن TeleSend تعرف بشكل صحيح
+  const { Send } = TeleSned(); // تأكد من أن TeleSend تعرف بشكل صحيح
   const searchParams = useSearchParams();
   const datas = searchParams.get("names");
 
